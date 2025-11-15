@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import SummaryCard from "../components/SummaryCard";
 import DataTable from "../components/DataTable";
 import { stats } from "../data/stats";
+import DashboardCharts from "../components/DashboardCharts";
 
 export default function Dashboard() {
   return (
@@ -24,7 +25,10 @@ export default function Dashboard() {
                 <SummaryCard key={s.label} label={s.label} value={s.value} />
               ))}
             </div>
+            {/* Chart */}
+            <DashboardCharts />
 
+            {/* Data User */}
             <DataTable />
           </div>
         </div>

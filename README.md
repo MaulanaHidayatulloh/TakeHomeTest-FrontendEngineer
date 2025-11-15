@@ -26,9 +26,17 @@ Aplikasi ini menampilkan dashboard sederhana yang berisi data user berupa **dumm
 - Menyimpan status login menggunakan `localStorage`
 - Redirect otomatis ke dashboard setelah login
 
-### 📊 2. Dashboard
+### 🏠 2. Dashboard
 
 Dashboard terdiri dari komponen berikut:
+
+#### 📚 Summary Cards
+
+- Menampilkan total user, transaksi, pendapatan, dan user baru
+
+#### 📊 Chart
+
+- Menampilkan chart dari Summary Cards
 
 #### 🔎 Search
 
