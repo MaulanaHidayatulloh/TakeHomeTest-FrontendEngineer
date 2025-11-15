@@ -55,7 +55,7 @@ Dashboard terdiri dari komponen berikut:
 
   1 2 3 ... 10 11 12 ... 30
 
-## 👤 3. Halaman Detail User
+### 👤 3. Halaman Detail User
 
 Menampilkan detail lengkap user, meliputi:
 
@@ -126,7 +126,7 @@ Password: admin123
 
 ---
 
-#### Maulana Hidayatulloh
+#### Maulana Hidayatulloh Mujanah
 
 #### Frontend Engineer
 
