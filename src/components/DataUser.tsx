@@ -2,14 +2,14 @@ import { useState } from "react";
 import { users } from "../data/users";
 import { useNavigate } from "react-router-dom";
 
-export default function DataGrid() {
+export default function DataUser() {
   const [search, setSearch] = useState("");
   const [page, setPage] = useState(1);
   const [roleFilter, setRoleFilter] = useState("all");
   const [sortName, setSortName] = useState<"asc" | "desc">("asc");
   const navigate = useNavigate();
 
-  const perPage = 8;
+  const perPage = 16;
 
   // SORTIR BERDASARKAN NAMA
   const sorted = [...users].sort((a, b) => {

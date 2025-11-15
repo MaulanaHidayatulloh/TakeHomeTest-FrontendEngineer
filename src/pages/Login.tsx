@@ -29,7 +29,7 @@ export default function Login() {
 
         <input
           type="email"
-          className="w-full border p-2 rounded mb-3"
+          className="w-full border p-2 rounded mb-3 mt-12"
           placeholder="Email"
           onChange={(e) => setEmail(e.target.value)}
         />
@@ -43,7 +43,7 @@ export default function Login() {
 
         <button
           type="submit"
-          className="bg-blue-600 text-white w-full py-2 rounded hover:bg-blue-700"
+          className="mt-2 bg-yellow-500 text-white w-full py-2 rounded hover:bg-yellow-700"
         >
           Masuk
         </button>

@@ -2,6 +2,7 @@ import { Navigate, Route, Routes } from "react-router-dom";
 import Login from "../pages/Login";
 import Dashboard from "../pages/Dashboard";
 import DetailUser from "../pages/DetailUser";
+import Users from "../pages/Users";
 
 export default function AppRoutes() {
   const isLoggedIn = localStorage.getItem("loggedIn") === "true";
@@ -24,6 +25,12 @@ export default function AppRoutes() {
       <Route
         path="/detail/:id"
         element={isLoggedIn ? <DetailUser /> : <Navigate to="/" replace />}
+      />
+
+      {/* USERS */}
+      <Route
+        path="/users"
+        element={isLoggedIn ? <Users /> : <Navigate to="/" replace />}
       />
     </Routes>
   );

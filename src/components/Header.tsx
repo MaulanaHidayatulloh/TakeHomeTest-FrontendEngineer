@@ -25,7 +25,7 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="flex justify-between items-center bg-white p-4 shadow">
+    <header className="fixed top-0 left-64 right-0 z-10 flex justify-between items-center bg-white p-4 shadow">
       <h1 className="text-xl font-semibold">Selamat Datang, {userName}</h1>
       <div className="relative" ref={dropdownRef}>
         <button

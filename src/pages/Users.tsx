@@ -1,10 +1,8 @@
 import Sidebar from "../components/Sidebar";
 import Header from "../components/Header";
-import SummaryCard from "../components/SummaryCard";
-import DataTable from "../components/DataTable";
-import { stats } from "../data/stats";
+import DataUser from "../components/DataUser";
 
-export default function Dashboard() {
+export default function Users() {
   return (
     <div className="flex">
       <Sidebar />
@@ -15,17 +13,11 @@ export default function Dashboard() {
         <div className="pt-18">
           {/* Paling Atas */}
           <div className="relative bg-yellow-500 text-white px-6 py-17 rounded-bl-4xl mb-1 overflow-hidden">
-            <h1 className="text-5xl font-bold">Dashboard</h1>
+            <h1 className="text-5xl font-bold">Users</h1>
           </div>
           {/* Isi Konten */}
-          <div className="p-6">
-            <div className="grid grid-cols-4 gap-4">
-              {stats.map((s) => (
-                <SummaryCard key={s.label} label={s.label} value={s.value} />
-              ))}
-            </div>
-
-            <DataTable />
+          <div className="p-6 pt-0">
+            <DataUser />
           </div>
         </div>
       </div>
